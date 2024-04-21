@@ -1,0 +1,27 @@
+:root{
+    /* fonts */
+    --font-default: "Open Sans", sans-serif;
+    --font-heading: "Roboto", sans-serif;
+  
+      /* Colors */
+  --color-primary: #0078ff;
+  --color-hover: #0062d3;
+  --color-black:#1e1e1e;
+  --color-grey: #4e4e4e;
+  --bg-color: #f5f5f5;
+}
+
+/* =====> General Style <===== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-default);
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+  }
+
+

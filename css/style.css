@@ -23,7 +23,6 @@ body {
   background-color: var(--bg-color);
   scroll-behavior: smooth;
 }
-
 h1,
 h2,
 h3,
@@ -41,9 +40,17 @@ img {
 
 section {
   padding-top: 5rem;
+  position: relative;
 }
 
 /* =====> Main Compound <===== */
+/* background image class */
+.bg-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
 /* main title */
 .main-title {
   padding-bottom: 40px;
@@ -67,6 +74,15 @@ section {
   left: 50%;
   transform: translateX(-50%);
   background: var(--color-primary);
+}
+/* overlay layer */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
 }
 
 /* =====> Header <===== */
@@ -112,11 +128,9 @@ nav .navbar-brand {
 #home {
   background-image: url(../images/hero-bg.jpg);
   height: 100vh;
-  background-size: cover;
-  background-position: center center;
 }
 #home .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #000;
 }
 #home h1 {
   font-size: 48px;
@@ -181,18 +195,9 @@ nav .navbar-brand {
 /* =====> Counter <===== */
 #counter {
   background-image: url(../images/counters-bg.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
 }
 #counter .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: #0078ff;
-  opacity: 0.7;
 }
 #counter .item {
   color: #fff;
@@ -264,19 +269,10 @@ nav .navbar-brand {
 /* =====> Testimonials <===== */
 #testimonial {
   background-image: url(../images/overlay-bg.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
   padding: 8rem 0;
 }
 #testimonial .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: #0078ff;
-  opacity: 0.7;
 }
 #testimonial .carousel-item {
   color: #fff;

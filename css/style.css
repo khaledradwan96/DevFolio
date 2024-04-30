@@ -297,3 +297,37 @@ nav .navbar-brand {
   border-radius: 50%;
   margin-left: 10px;
 }
+
+/* =====> Blog <===== */
+#blog .card {
+  margin-bottom: 1rem;
+}
+#blog .card-body h6 {
+  background-color: var(--color-primary);
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 6px;
+}
+#blog a {
+  color: var(--color-black);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#blog a:hover {
+  color: var(--color-primary);
+}
+#blog .card-footer img {
+  width: 30px;
+  border-radius: 50%;
+}
+#blog .card-footer a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

@@ -38,61 +38,56 @@ h6 {
 }
 
 /* =====> Header <===== */
-header nav .container .nav-link,
-header .navbar-nav .nav-link.active {
-  color: #fff;
-}
-header .navbar-brand {
-  font-family: var(--font-heading);
-  color: #fff;
+nav .navbar-brand {
   font-size: 28px;
+  color: #fff;
+  font-family: var(--font-heading);
+  text-transform: none;
   font-weight: 600;
   letter-spacing: 1px;
 }
-header .navbar-toggler {
-  background-color: white;
-}
-header .navbar-brand:hover,
-header .nav-link:hover {
+.navbar-brand:focus,
+.navbar-brand:hover {
   color: #fff;
 }
-header .nav-item {
+.navbar .nav-item .nav-link {
+  text-transform: uppercase;
+  color: #fff !important;
   position: relative;
 }
-header .nav-link::before {
+.navbar .nav-item .nav-link::before {
   content: "";
   position: absolute;
+  z-index: -1;
   left: 8px;
   right: 100%;
   bottom: 0;
-  background-color: #fff;
+  background: #fff;
   height: 2px;
   transition: 0.3s;
-  transition-timing-function: ease-out;
 }
-header .nav-link:hover::before {
+.navbar .nav-item .nav-link:hover::before {
+  right: 30%;
+}
+.navbar .nav-item .nav-link.active::before {
   right: 30%;
 }
 
-/* =====> Home page <===== */
-.home {
+/* =====> Home <===== */
+#home {
   background-image: url(../images/hero-bg.jpg);
+  height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
-  position: relative;
 }
-.home .overlay {
-  position: absolute;
+#home .overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
-.home .content h1 {
-  position: relative;
-  color: #fff;
+#home h1 {
   font-size: 48px;
-  text-align: center;
 }
+#home span {
+  color: #fff;
+}
+
+/* =====> About <===== */

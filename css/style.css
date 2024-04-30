@@ -38,6 +38,9 @@ h6 {
 }
 
 /* =====> Header <===== */
+header {
+  background: rgba(0, 0, 0, 0.9);
+}
 nav .navbar-brand {
   font-size: 28px;
   color: #fff;
@@ -91,3 +94,21 @@ nav .navbar-brand {
 }
 
 /* =====> About <===== */
+#about .container .box-shadow {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 3rem 1.25rem;
+}
+
+#about .about h4::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+#about .skill .progress {
+  margin: 0.5rem 0 1.2rem 0;
+}

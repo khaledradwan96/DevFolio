@@ -43,7 +43,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
@@ -97,9 +97,76 @@
         </div>
     </section>
 
+    <!-- =====>  About <===== -->
+    <section id="about" class="pt-5 pb-5">
+        <div class="container">
+            <div class="box-shadow">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col photo mb-4 text-center">
+                                <img src="images/testimonial-2.jpg" class="rounded" alt="">
+                            </div>
+                            <div class="col details">
+                                <p><strong>Name: </strong>Morgan Freeman</p>
+                                <p><strong>Profile: </strong>full stack developer</p>
+                                <p><strong>Email: </strong>contact@example.com</p>
+                                <p><strong>Phone: </strong>(617) 557-0089</p>
+                            </div>
+                            <div class="col-12 skill">
+                                <h4>Skill</h4>
+                                <span> HTML 85%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Segment one"
+                                        style="width: 85%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <span> CSS3 75%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Segment one"
+                                        style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <span> PHP 50%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Segment one"
+                                        style="width: 50%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <span> JAVASCRIPT 90%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Segment one"
+                                        style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 about pt-4 pt-md-0">
+                        <h4 class="position-relative mb-3">About me</h4>
+                        <p class="lead">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur
+                            arcu
+                            erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
+                            pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+                        <p class="lead">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit
+                            tortor
+                            eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                            amet
+                            dui. porttitor at sem.</p>
+                        <p class="lead">Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in,
+                            elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget
+                            tincidunt nibh pulvinar a.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+
+
+    <!-- Script for typing at Section home -->
     <script>
         var typed = new Typed('#type', {
             strings: ['Freelancer', 'Photographer', 'Designer', 'Developer'],
@@ -107,7 +174,6 @@
             Infinity,
         });
     </script>
-
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

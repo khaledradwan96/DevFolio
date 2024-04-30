@@ -260,3 +260,40 @@ nav .navbar-brand {
 #portfolio .item .circle i {
   font-size: 25px;
 }
+
+/* =====> Testimonials <===== */
+#testimonial {
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 8rem 0;
+}
+#testimonial .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #0078ff;
+  opacity: 0.7;
+}
+#testimonial .carousel-item {
+  color: #fff;
+  text-align: center;
+}
+#testimonial .carousel-item img {
+  width: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+#testimonial .carousel-item h5 {
+  color: #fff;
+  margin: 16px 0;
+}
+#testimonial button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+}

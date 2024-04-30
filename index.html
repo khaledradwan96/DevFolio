@@ -32,27 +32,26 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">DevFolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa-solid fa-bars text-white"></i></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link scrollto active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link scrollto" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link scrollto" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
+                            <a class="nav-link scrollto" href="#portfolio">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link scrollto" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -78,7 +77,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link scrollto" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -104,10 +103,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col photo mb-4 text-center">
+                            <div class="col-sm-6 col-md-5 photo mb-4 text-center">
                                 <img src="images/testimonial-2.jpg" class="rounded" alt="">
                             </div>
-                            <div class="col details">
+                            <div class="col-sm-6 col-md-7 details">
                                 <p><strong>Name: </strong>Morgan Freeman</p>
                                 <p><strong>Profile: </strong>full stack developer</p>
                                 <p><strong>Email: </strong>contact@example.com</p>
@@ -444,9 +443,9 @@
     <section id="testimonial" class="bg-image">
         <div class="overlay"></div>
         <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner w-100">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="3000">
                         <img src="images/testimonial-2.jpg">
                         <h5>Xavi Alonso</h5>
                         <p class="lead">
@@ -454,7 +453,7 @@
                             consectetur adipiscing elit.
                         </p>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="images/testimonial-4.jpg">
                         <h5>Marta Socrate</h5>
                         <p class="lead">
@@ -616,7 +615,9 @@
                 <li><a href=""><i class="fa-brands fa-github"></i></a></li>
             </ul>
         </div>
-        <a href="#home" class="back-top"> <i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#home" class="back-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </footer>
 
     <!-- Script for typing at Section home -->
@@ -624,8 +625,8 @@
     <script>
         var typed = new Typed('#type', {
             strings: ['Freelancer', 'Photographer', 'Designer', 'Developer'],
-            typeSpeed: 70,
-            loop,
+            typeSpeed: 100,
+            loop: true,
         });
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>

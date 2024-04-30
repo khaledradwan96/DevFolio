@@ -193,6 +193,10 @@ nav .navbar-brand {
 #services .item-box:hover .circle i {
   color: #fff;
 }
+#services h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 
 /* =====> Counter <===== */
 #counter {
@@ -312,6 +316,7 @@ nav .navbar-brand {
   padding: 5px 15px;
   color: #fff;
   border-radius: 6px;
+  font-size: 0.7rem;
 }
 #blog a {
   color: var(--color-black);
@@ -363,6 +368,10 @@ nav .navbar-brand {
 #contact form button {
   padding: 10px 24px;
   border-radius: 5rem;
+  transition: 0.3s;
+}
+#contact form button:hover {
+  outline: 5px solid rgba(0, 119, 255, 0.3);
 }
 #contact ul.list-ico {
   list-style: none;
@@ -450,6 +459,7 @@ nav .navbar-brand {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  text-decoration: none;
 }
 .back-top i {
   font-size: 20px;

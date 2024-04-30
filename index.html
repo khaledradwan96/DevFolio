@@ -32,12 +32,12 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">DevFolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
+                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa-solid fa-bars text-white"></i></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link scrollto active" aria-current="page" href="#">Home</a>
                         </li>
@@ -60,7 +60,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
-                                <li><a class="dropdown-item" href="#">
+                                <li class="position-relative"><a class="dropdown-item" href="#">
                                         Deep Drop Down
                                     </a>
                                     <ul class="dropdown-menu2">
@@ -559,7 +559,6 @@
         </div>
     </section>
 
-
     <!-- =====>  contact form <===== -->
     <section id="contact" class="bg-image">
         <div class="overlay"></div>
@@ -629,6 +628,7 @@
             loop: true,
         });
     </script>
+    <!-- Script for Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

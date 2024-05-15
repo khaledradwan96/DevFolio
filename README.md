@@ -1,14 +1,4 @@
-<!-- DevFolio template -->
-html, CSS, Bootstrap  v5.3.3
-
-
 # DevFolio template
-
-## Description
-This is a simple calculator app built with HTML, CSS, and JavaScript. It performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
-
-# DevFolio
-A Personal Website Template. 
 
 ## Description
 - This is a customizable template for a personal website
@@ -27,8 +17,5 @@ A Personal Website Template.
     - Blog
     - contact form
 
-
 ## Preview
-![[Personal Website Template Preview](https://khaledradwan96.github.io/DevFolio/)](preview.png)
-
-
+[DevFolio link](https://khaledradwan96.github.io/DevFolio/)
